@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234285f4'><path d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 14H7v-2h10v2zm0-4H7v-2h10v2zm0-4H7V7h10v2z'/></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Updated Font Awesome Kit with all styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="app-container">
+        <div class="theme-toggle">
+            <button id="themeToggle" aria-label="Toggle theme">
+                <span class="toggle-icon">🌞</span>
+                <span class="toggle-text">Light Mode</span>
+            </button>
+        </div>
+        <div class="calculator-container">
+            <div class="calculator">
+                <div class="display">
+                    <div class="previous-operand"></div>
+                    <div class="current-operand">0</div>
+                </div>
+                <div class="buttons">
+                    <button class="function" title="Square">x²</button>
+                    <button class="function" title="Square root">√</button>
+                    <button class="function" title="Percentage">%</button>
+                    <button class="function" title="Reciprocal">1/x</button>
+                    
+                    <button class="memory" title="Memory Clear">MC</button>
+                    <button class="memory" title="Memory Recall">MR</button>
+                    <button class="memory" title="Memory Add">M+</button>
+                    <button class="memory" title="Memory Subtract">M-</button>
+
+                    <button class="span-two clear" title="Clear all">AC</button>
+                    <button class="delete" title="Delete">⌫</button>
+                    <button class="operator" title="Divide">÷</button>
+
+                    <button class="number">7</button>
+                    <button class="number">8</button>
+                    <button class="number">9</button>
+                    <button class="operator" title="Multiply">×</button>
+
+                    <button class="number">4</button>
+                    <button class="number">5</button>
+                    <button class="number">6</button>
+                    <button class="operator" title="Subtract">−</button>
+
+                    <button class="number">1</button>
+                    <button class="number">2</button>
+                    <button class="number">3</button>
+                    <button class="operator" title="Add">+</button>
+
+                    <button class="number span-two">0</button>
+                    <button class="number">.</button>
+                    <button class="equals" title="Calculate">=</button>
+                </div>
+            </div>
+            <div class="history-panel">
+                <div class="history-header">
+                    <h3>History</h3>
+                    <button id="clearHistory" title="Clear history">🗑</button>
+                </div>
+                <div class="history-content">
+                    <!-- History items will be added here dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
